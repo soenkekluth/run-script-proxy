@@ -18,34 +18,27 @@ if (options.length) {
   command += ' ' + options.join(' ');
 }
 
-const shell = (command) => {
-  return new Promise((resolve, reject) => {
+const shell = command => new Promise((resolve, reject) => {
+  var out = '';
+  exec(command, { stdio: 'inherit' }, (error, stdout, stderr) => {
+    if (error) {
+      resolve(error);
+      return;
+    }
 
-    var out = '';
-    exec(command, { stdio: 'inherit' }, (error, stdout, stderr) => {
-      if (error) {
-        resolve(error);
-        return;
-      }
-      // console.log(stdout);
-      if (stderr) {
-        out = stderr;
-        // return;
-      }
+    if (stderr) {
+      out = stderr;
+    }
+    out += stdout;
 
-      out += stdout;
-
-      resolve(out);
-    });
-
+    resolve(out);
   });
-}
+});
 
 commandExists('yarn', function(err, exists) {
-
   let cmd = 'npm run';
-  if(exists && fs.existsSync('./yarn.lock')){
-    cmd = 'yarn';
+  if (exists && fs.existsSync('./yarn.lock')) {
+    cmd = 'yarn run';
   }
   cmd += ' ' + command;
   shell(cmd);

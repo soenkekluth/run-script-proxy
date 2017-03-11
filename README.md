@@ -23,3 +23,10 @@ in package.json scripts you can now use `run` instead of `npm run` or `yarn`
   }
 }
 ```
+
+
+## see also
+
+### yarn-run
+Run locally installed node module executables with yarn from command line
+https://www.npmjs.com/package/yarn-run
