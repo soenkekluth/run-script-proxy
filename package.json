@@ -1,9 +1,9 @@
 {
-  "name": "run-proxy",
-  "version": "1.0.1",
-  "description": "run-proxy calls npm scripts either with npm or yarn",
+  "name": "run-script-proxy",
+  "version": "1.0.0",
+  "description": "run-script-proxy calls scripts inside package.json either with npm or yarn (if used)",
   "main": "index.js",
-  "repository": "https://github.com/soenkekluth/run-proxy",
+  "repository": "https://github.com/soenkekluth/run-script-proxy",
   "author": "Sönke Kluth <mail@soenkekluth.com>",
   "license": "MIT",
   "bin": {
