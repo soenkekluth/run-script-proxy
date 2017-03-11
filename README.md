@@ -1,5 +1,5 @@
 # run-script-proxy
-run-script-proxy calls scripts inside package.json either with npm or yarn (if used)
+run-script-proxy calls scripts inside package.json either with npm or yarn (if used) with a simple `run` command
 
 
 # install
@@ -13,9 +13,6 @@ run-script-proxy calls scripts inside package.json either with npm or yarn (if u
 ## usage
 
 in package.json scripts you can now use `run` instead of `npm run` or `yarn`
-
-
-## example
 
 
 ```
