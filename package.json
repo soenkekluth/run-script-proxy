@@ -1,6 +1,6 @@
 {
   "name": "run-script-proxy",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "run-script-proxy calls scripts inside package.json either with npm or yarn (if used)",
   "main": "index.js",
   "repository": "https://github.com/soenkekluth/run-script-proxy",
@@ -10,9 +10,9 @@
     "run": "./index.js"
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && node index.js echo",
-    "echo": "echo \"echo\"",
-    "start": "echo \"Error: no start specified\""
+    "test": "echo \"Error: no test specified\"",
+    "start": "echo \"Error: no start specified\"",
+    "out": "echo \"out\""
   },
   "keywords": [
     "npm",
