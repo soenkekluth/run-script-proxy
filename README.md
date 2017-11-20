@@ -1,4 +1,6 @@
 # run-script-proxy
+
+[![Greenkeeper badge](https://badges.greenkeeper.io/soenkekluth/run-script-proxy.svg)](https://greenkeeper.io/)
 run-script-proxy calls scripts inside package.json either with npm or yarn (if used) with a simple `run` command
 
 
